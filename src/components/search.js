@@ -12,7 +12,7 @@ function search() {
             <MicIcon />
         </div>
         <div className='search__buttons'>
-            <Button variant='outlined'>Google Search</Button>
+            <Button onClick={search} variant='outlined'>Google Search</Button>
             {/* variabt is material ui prop */}
             <Button variant='outlined'>I'm Feeling Lucky</Button>
         </div>
