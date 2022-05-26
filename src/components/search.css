@@ -48,6 +48,6 @@
     color: #222;
 }
 
-.search__buttonsHidden{
+.search__buttons .search__buttonsHidden{
     display: none !important;
 }

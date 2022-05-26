@@ -4,7 +4,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import MicIcon from '@mui/icons-material/Mic';
 import Button from '@mui/material/Button'
 import { useHistory } from 'react-router-dom'
-function Search({hideButtons = false}) {
+function Search({ hideButtons = false }) {
   const [input, setInput] = useState(" ");
   const history = useHistory();
   //provides browser history
@@ -24,17 +24,16 @@ function Search({hideButtons = false}) {
             <MicIcon />
         </div>
 
-        {hideButtons ? (
+        { !hideButtons ? (
         <div className='search__buttons'>
             <Button type='submit' onClick={search} variant='outlined'>Google Search</Button>
             {/* variabt is material ui prop */}
             <Button variant='outlined'>I'm Feeling Lucky</Button>
-        </div>):
-        (
+        </div>):(
         <div className='search__buttons'>
-            <Button class='search___buttonsHidden'type='submit' onClick={search} variant='outlined'>Google Search</Button>
+            <Button className='search__buttonsHidden' type='submit' onClick={search} variant='outlined'>Google Search</Button>
             {/* variabt is material ui prop */}
-            <Button class='search__buttonsHidden' variant='outlined'>I'm Feeling Lucky</Button>
+            <Button className='search__buttonsHidden' variant='outlined'>I'm Feeling Lucky</Button>
         </div>)}
 
     </form>
