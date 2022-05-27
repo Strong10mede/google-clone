@@ -4,7 +4,11 @@ import SearchIcon from '@mui/icons-material/Search';
 import MicIcon from '@mui/icons-material/Mic';
 import Button from '@mui/material/Button'
 import { useHistory } from 'react-router-dom'
+import { useStateValue } from '../StateProvider';
+import { actionTypes } from '../reducer';
 function Search({ hideButtons = false }) {
+  //state tells look of data layer, dispatch is like a gun allows to shoot action into data layer to change it
+  const [ state, dispatch] = useStateValue();
   const [input, setInput] = useState(" ");
   const history = useHistory();
   //provides browser history
@@ -13,6 +17,10 @@ function Search({ hideButtons = false }) {
     e.preventDefault();
     
     console.log('You hit the search button');
+    dispatch({
+      type : actionTypes.SET_SEARCH_TERM,
+      term : input,
+    })
 
     history.push('/search');
   }
