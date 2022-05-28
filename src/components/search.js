@@ -20,7 +20,7 @@ function Search({ hideButtons = false }) {
     
     dispatch({
       type : actionTypes.SET_SEARCH_TERM,
-      term : input,
+      term : input
     })
 
     history.push("/search");

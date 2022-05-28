@@ -30,7 +30,7 @@ function Home() {
             <img src='https://www.google.com/logos/doodles/2015/googles-new-logo-5078286822539264.3-hp2x.gif' alt='google logo'/>
             <div className='home__inputContainer'>
                 {/* Search */}
-                <Search hideButtons />
+                <Search />
             </div>
         </div>
     </div>
