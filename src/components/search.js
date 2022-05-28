@@ -4,8 +4,8 @@ import SearchIcon from '@mui/icons-material/Search';
 import MicIcon from '@mui/icons-material/Mic';
 import Button from '@mui/material/Button'
 import { useHistory } from 'react-router-dom'
-import { useStateValue } from '../StateProvider';
-import { actionTypes } from '../reducer';
+import { useStateValue } from '../StateProvider/StateProvider';
+import { actionTypes } from '../StateProvider/reducer';
 function Search({ hideButtons = false }) {
   //state tells look of data layer, dispatch is like a gun allows to shoot action into data layer to change it
   const [ {}, dispatch] = useStateValue();
