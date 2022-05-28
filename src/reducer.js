@@ -3,7 +3,7 @@ export const initialState = {
 };
 
 export const actionTypes = {
-    SET_SEARCH_TERM : 'SET_SEARCH_TERM',
+    SET_SEARCH_TERM : "SET_SEARCH_TERM",
 };
 
 //state is state of data layer, action whatever we dispatch into data layer

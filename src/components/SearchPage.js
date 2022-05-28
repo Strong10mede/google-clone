@@ -7,8 +7,8 @@ function SearchPage() {
   return (
     <div className='searchPage'>
         <div className='searchPage__header'>
-            
-            <h1>hi guys</h1>
+            <h1>{term}</h1>
+            <h1>hi guys hhh</h1>
         </div>
         <div className='searchPage__result'></div>
     </div>

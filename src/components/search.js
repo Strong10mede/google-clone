@@ -9,7 +9,7 @@ import { actionTypes } from '../reducer';
 function Search({ hideButtons = false }) {
   //state tells look of data layer, dispatch is like a gun allows to shoot action into data layer to change it
   const [ {}, dispatch] = useStateValue();
-  const [input, setInput] = useState(" ");
+  const [input, setInput] = useState("");
   const history = useHistory();
   //provides browser history
 
@@ -18,12 +18,12 @@ function Search({ hideButtons = false }) {
     
     console.log('You hit the search button >>', input);
     
-    // dispatch({
-    //   type : actionTypes.SET_SEARCH_TERM,
-    //   term : input,
-    // })
+    dispatch({
+      type : actionTypes.SET_SEARCH_TERM,
+      term : input,
+    })
 
-    history.push('/search');
+    history.push("/search");
   }
   return (
     <form className='search'>
