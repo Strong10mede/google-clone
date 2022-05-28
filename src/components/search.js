@@ -8,7 +8,7 @@ import { useStateValue } from '../StateProvider';
 import { actionTypes } from '../reducer';
 function Search({ hideButtons = false }) {
   //state tells look of data layer, dispatch is like a gun allows to shoot action into data layer to change it
-  const [ state, dispatch] = useStateValue();
+  const [ {}, dispatch] = useStateValue();
   const [input, setInput] = useState(" ");
   const history = useHistory();
   //provides browser history

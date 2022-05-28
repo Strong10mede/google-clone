@@ -10,7 +10,7 @@ function App() {
       <Router>
         <Switch>
           <Route path='/search'>
-            <SearchPage/>
+            <SearchPage />
           </Route>
           <Route path='/'>
             <Home />
