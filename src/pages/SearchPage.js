@@ -7,6 +7,7 @@ function SearchPage() {
     console.log(term);
 
     //https://developer.google.com/custom-search/v1/using_rest
+    //AIzaSyDQ88qPv7zSVELrbTc127W1tQQxRnPxWfk
 
   return (
     <div className='searchPage'>
