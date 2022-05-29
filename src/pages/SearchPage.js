@@ -6,6 +6,8 @@ function SearchPage() {
     const [{term} , dispatch] = useStateValue();
     console.log(term);
 
+    //https://developer.google.com/custom-search/v1/using_rest
+
   return (
     <div className='searchPage'>
         <div className='searchPage__header'>
