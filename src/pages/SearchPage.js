@@ -6,8 +6,8 @@ function SearchPage() {
     const [{term} , dispatch] = useStateValue();
     console.log(term);
 
-    //https://developer.google.com/custom-search/v1/using_rest
-    //AIzaSyDQ88qPv7zSVELrbTc127W1tQQxRnPxWfk
+    //https://developer.google.com/custom-search/v1/using_rest  custom search api key
+    //https://cse.google.com/cse/create/new  custom hook
 
   return (
     <div className='searchPage'>
