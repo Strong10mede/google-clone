@@ -1,8 +1,10 @@
 import React from 'react'
-import { useStateValue } from '../StateProvider/StateProvider'
 import './SearchPage.css'
+import { useStateValue } from '../StateProvider/StateProvider'
 function SearchPage() {
-    const [{term}, dispatch] =useStateValue();
+    // eslint-disable-next-line no-unused-vars
+    const [{term} , dispatch] = useStateValue();
+    console.log(term);
 
   return (
     <div className='searchPage'>

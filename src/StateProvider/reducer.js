@@ -1,5 +1,5 @@
 export const initialState = {
-    term : null,
+    term : 'abdsgvc',
 };
 
 export const actionTypes = {
@@ -7,12 +7,12 @@ export const actionTypes = {
 };
 
 //state is state of data layer, action whatever we dispatch into data layer
-const reducer = (state,action) => {
+const reducer = (state=initialState,action) => {
     console.log(action);
 
     switch (action.type) {
         case actionTypes.SET_SEARCH_TERM:
-            return{
+            return {
                 //spread operator
                 ...state,
                 term: action.term,
