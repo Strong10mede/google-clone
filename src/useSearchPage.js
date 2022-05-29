@@ -12,7 +12,7 @@ const useSearchPage = (term) => {
      const fetchData = async() => {
          fetch(
             //this connnect to google search api
-            `https://www.googleapis.com/customsearch/v1?keys=${API_KEY}&cx=${CONTEXT_KEY}&q=${term}`
+            `https://www.googleapis.com/customsearch/v1?key=${API_KEY}&cx=${CONTEXT_KEY}&q=${term}`
          )
          //get json from the response
          .then(response =>response.json())

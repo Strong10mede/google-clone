@@ -3,9 +3,9 @@ import './SearchPage.css'
 import { useStateValue } from '../StateProvider/StateProvider'
 import useSearchPage from '../useSearchPage';
 function SearchPage() {
-    // eslint-disable-next-line no-unused-vars
+    // eslint-disable-next-line 
     const [{term} , dispatch] = useStateValue();
-    const [data] = useSearchPage(term);
+    const {data} = useSearchPage(term);
     console.log(data);
 
     //https://developer.google.com/custom-search/v1/using_rest  custom search api key
