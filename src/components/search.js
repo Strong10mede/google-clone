@@ -11,7 +11,7 @@ import { actionTypes } from '../StateProvider/reducer';
 function Search({ hideButtons = false }) {
   //state tells look of data layer, dispatch is like a gun allows to shoot action into data layer to change it
   //eslint-disable-next-line no-empty-pattern
-  const [ {term}, dispatch] = useStateValue();
+  const [ {}, dispatch] = useStateValue();
   const [input, setInput] = useState("");
    //const history = createBrowserHistory({forceRefresh:true});
     const history = useHistory();
