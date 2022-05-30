@@ -38,3 +38,7 @@
   text-decoration: none;
   color: gray;
 }
+
+.searchPage__optionsRight {
+  margin-left: 5rem;
+}
