@@ -6,6 +6,7 @@ import Response from "../response";
 import { Link } from "react-router-dom";
 import "./SearchPage.css";
 import Search from "../components/search";
+import SearchIcon from "@mui/icons-material/Search";
 function SearchPage() {
   // eslint-disable-next-line
   const [{ term }, dispatch] = useStateValue();
@@ -31,6 +32,15 @@ function SearchPage() {
         </Link>
         <div className="searchPage__headerBody">
           <Search hideButtons />
+        </div>
+        <div className="searchPage__options">
+          <div className="searchPage__optionsLeft">
+            <div className="searchPage__option">
+              <SearchIcon />
+              <Link to="/all">All</Link>
+            </div>
+          </div>
+          <div className="searchPage__optionsRight"></div>
         </div>
       </div>
       <div className="searchPage__result"></div>
