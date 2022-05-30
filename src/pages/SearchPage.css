@@ -1,15 +1,23 @@
 .searchPage__header {
-  position: fixed;
+  position: sticky;
   top: 0;
   display: flex;
   background-color: #fff;
   z-index: 100;
   align-items: flex-start;
   border-bottom: 1px solid lightgray;
+  padding: 1.85rem;
 }
 
 .searchPage__logo {
   object-fit: contain;
   margin-right: 3.125rem;
   height: 3.125rem;
+}
+
+.searchPage__headerBody > .search > .search__input {
+  margin-top: 0;
+  width: unset;
+  margin: unset;
+  max-width: unset;
 }
