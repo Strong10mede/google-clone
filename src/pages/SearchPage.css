@@ -53,6 +53,12 @@
   margin-left: 0.325rem;
 }
 
+.searchPage__results {
+  max-width: 40rem;
+  margin-top: 1.25rem;
+  margin-left: 15rem;
+  margin-bottom: 6.25rem;
+}
 .searchPage__result {
   margin: 2.5rem 0;
 }
