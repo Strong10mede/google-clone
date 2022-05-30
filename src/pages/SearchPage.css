@@ -52,3 +52,12 @@
 .searchPage__option a {
   margin-left: 0.325rem;
 }
+
+.searchPage__result {
+  margin: 2.5rem 0;
+}
+
+.searchPage__resultCount {
+  color: #70757a;
+  font-size: 1rem;
+}
