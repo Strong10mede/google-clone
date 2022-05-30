@@ -1,3 +1,4 @@
+//we can use them as object
 export default {
     "kind": "customsearch#search",
     "url": {
