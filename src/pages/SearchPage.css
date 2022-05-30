@@ -42,3 +42,9 @@
 .searchPage__optionsRight {
   margin-left: 5rem;
 }
+
+.searchPage__option {
+  display: flex;
+  margin-right: 1.25rem;
+  align-items: center;
+}
