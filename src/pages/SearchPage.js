@@ -5,6 +5,7 @@ import useSearchPage from "../useSearchPage";
 import Response from "../response";
 import { Link } from "react-router-dom";
 import "./SearchPage.css";
+import Search from "../components/search";
 function SearchPage() {
   // eslint-disable-next-line
   const [{ term }, dispatch] = useStateValue();
@@ -28,6 +29,9 @@ function SearchPage() {
             alt="google_logo"
           />
         </Link>
+        <div className="searchPage__headerBody">
+          <Search hideButtons />
+        </div>
       </div>
       <div className="searchPage__result"></div>
     </div>

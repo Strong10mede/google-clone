@@ -1,3 +1,13 @@
+.searchPage__header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  background-color: #fff;
+  z-index: 100;
+  align-items: flex-start;
+  border-bottom: 1px solid lightgray;
+}
+
 .searchPage__logo {
   object-fit: contain;
   margin-right: 3.125rem;
