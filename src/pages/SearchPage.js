@@ -7,6 +7,8 @@ import { Link } from "react-router-dom";
 import "./SearchPage.css";
 import Search from "../components/search";
 import SearchIcon from "@mui/icons-material/Search";
+import DescriptionIcon from "@mui/icons-material/Description";
+import ImageIcon from "@mui/icons-material/Image";
 function SearchPage() {
   // eslint-disable-next-line
   const [{ term }, dispatch] = useStateValue();
