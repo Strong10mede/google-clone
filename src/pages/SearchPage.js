@@ -17,9 +17,11 @@ function SearchPage() {
   const [{ term }, dispatch] = useStateValue();
 
   // LIVE API_CALL
-  //const {data} = useSearchPage(term);
+  const { data } = useSearchPage(term);
 
-  const data = Response;
+  //Mock api call just use not fill the 100 search query limit, data resources were extracted from response.js file
+  //const data = Response;
+
   //https://developer.google.com/custom-search/v1/using_rest  custom search api key
   //https://cse.google.com/cse/create/new  custom hook
 
@@ -76,7 +78,7 @@ function SearchPage() {
           </div>
         </div>
       </div>
-      {true && (
+      {term && (
         <div className="searchPage__results">
           <p className="searchPage__resultCount">
             About {data?.searchInformation.formattedTotalResults} results (
