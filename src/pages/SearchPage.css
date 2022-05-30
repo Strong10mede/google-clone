@@ -48,3 +48,7 @@
   margin-right: 1.25rem;
   align-items: center;
 }
+
+.searchPage__option a {
+  margin-left: 0.325rem;
+}
