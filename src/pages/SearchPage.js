@@ -3,6 +3,7 @@ import './SearchPage.css'
 import { useStateValue } from '../StateProvider/StateProvider'
 import useSearchPage from '../useSearchPage';
 import Response from '../response';
+import { Link } from 'react-router-dom';
 function SearchPage() {
     // eslint-disable-next-line 
     const [{term} , dispatch] = useStateValue();
@@ -20,7 +21,9 @@ function SearchPage() {
   return (
     <div className='searchPage'>
         <div className='searchPage__header'>
-            <h1>{term}</h1>
+            <Link to='/'>
+              <img className='searchPage__logo' src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png' alt='google_logo'/>
+            </Link>
             
         </div>
         <div className='searchPage__result'></div>
