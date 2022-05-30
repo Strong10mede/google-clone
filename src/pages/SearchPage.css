@@ -33,4 +33,8 @@
   display: flex;
 }
 
-.searchPage__options;
+.searchPage__optionsLeft a,
+.searchPage__optionsRight a {
+  text-decoration: none;
+  color: gray;
+}
