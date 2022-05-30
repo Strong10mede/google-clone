@@ -45,23 +45,23 @@ function SearchPage() {
               <Link to="/all">All</Link>
             </div>
             <div className="searchPage__option">
-              <SearchIcon />
+              <DescriptionIcon />
               <Link to="/news">News</Link>
             </div>
             <div className="searchPage__option">
-              <SearchIcon />
+              <ImageIcon />
               <Link to="/images">Images</Link>
             </div>
             <div className="searchPage__option">
-              <SearchIcon />
+              <LocalOfferIcon />
               <Link to="/shopping">Shopping</Link>
             </div>
             <div className="searchPage__option">
-              <SearchIcon />
+              <RoomIcon />
               <Link to="/maps">Maps</Link>
             </div>
             <div className="searchPage__option">
-              <SearchIcon />
+              <MoreVertIcon />
               <Link to="/more">More</Link>
             </div>
           </div>
